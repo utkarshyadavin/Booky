@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+
+
+{%  block body %}
+
+    <h1 class="text-center">Category List</h1>
+    <br>
+
+    <div class="list-group">
+     <div class="container">
+
+    {% for category in all_categorys %}
+        <a href="/account/{{ category.id }}/" class="list-group-item ">{{ category.category_name }} </a>
+
+
+
+
+
+    {% endfor %}
+         </div>
+      </div>
+
+
+
+{% endblock %}
+

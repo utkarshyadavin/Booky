@@ -1,0 +1,21 @@
+{%  extends 'base.html' %}
+
+
+{% block body %}
+
+
+    <h1 class="text-center">{{ category.category_name }}</h1>
+
+    <div class="list-group">
+     <div class="container">
+    {% for element in category.info_set.all %}
+
+   <li>   {{element.title }}</li>
+
+
+    {% endfor %}
+     </div>
+    </div>
+
+
+{% endblock %}
