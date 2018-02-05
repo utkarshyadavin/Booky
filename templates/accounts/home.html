@@ -2,8 +2,20 @@
 
 
 
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/style.css' %}" />
 
-{%  block body %}
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+
+
 
     <h1 class="text-center">Category List</h1>
     <br>
@@ -13,11 +25,6 @@
 
     {% for category in all_categorys %}
         <a href="/account/{{ category.id }}/" class="list-group-item ">{{ category.category_name }} </a>
-
-
-
-
-
     {% endfor %}
          </div>
       </div>
@@ -25,4 +32,3 @@
 
 
 {% endblock %}
-
