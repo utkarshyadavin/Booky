@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/style.css' %}" />
+
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+
+
+
+    <h1 class="text-center">Category List</h1>
+
+
+    <div class="list-group">
+     <div class="container list1">
+
+    {% for category in all_categorys %}
+        <a href="/account/{{ category.id }}/" class="list-group-item ">{{ category.category_name }} </a>
+
+    {% endfor %}
+         </div>
+      </div>
+
+
+
+{% endblock %}

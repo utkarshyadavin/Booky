@@ -1,0 +1,27 @@
+{%  extends 'base.html' %}
+
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/home_style.css' %}" />
+
+{% endblock %}
+
+
+
+
+{% block body %}
+
+    <h1 class="text-center"> Category Added Succesfully</h1>
+
+    <br>
+    <br>
+    <div class=" text-center">
+    <a href="/account/category/add"> <button class="btn btn-primary">Add Another</button> </a>
+    </div>
+    <br>
+
+    <div class="text-center">
+        <a href="/account/browse"><button class="btn btn-primary">Browse</button></a>
+    </div>
+
+{% endblock %}

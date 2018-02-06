@@ -1,0 +1,32 @@
+body{
+
+    background: url("images/background3.jpg");
+}
+h1{
+    font-family: Sofia;
+}
+.descriptionstyle{
+    width: 60%;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    font-family: Catamaran;
+    font-size: 20px;
+    margin-top: 25px;
+
+}
+
+.descriptionstyle a{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Times New;
+    text-decoration: none;
+    margin-left: 40%;
+    color: cadetblue;
+}
+
+.descriptionstyle a:hover{
+    color:darkslateblue;
+}

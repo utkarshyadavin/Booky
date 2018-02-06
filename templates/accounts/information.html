@@ -1,19 +1,32 @@
 {%  extends 'base.html' %}
 
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/home_style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'accounts/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'accounts/button.css' %}" />
+
+
+{% endblock %}
+
+
 
 {% block body %}
 
 
     <h1 class="text-center">{{ category.category_name }}</h1>
+    <div class=" text-center">
+    <a href="/account/{{ category.id }}/information/add" ><button class="btn btn-primary specificbutton">Add Information</button></a>
+    </div>
+    <br>
 
-    <div class="list-group">
-     <div class="container">
-    {% for element in category.info_set.all %}
+    <div class="list-group ">
+     <div class="container list1">
 
-   <li>   {{element.title }}</li>
-
-
+         {% for element in category.info_set.all %}
+        <a href = "/account/{{ category.id }}/{{ element.id }}" class="list-group-item">{{ element.title }}</a>
     {% endfor %}
+
      </div>
     </div>
 

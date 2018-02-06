@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/description.css' %}" />
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block body%}
+<h1 class="text-center">{{ desc.title }}</h1>
+
+
+
+  <div class="descriptionstyle">
+    <p class="card-text">{{ desc.description }}</p>
+    <a href="{{ desc.link }}" target="_blank" class="card-link">Visit Link</a>
+  </div>
+{% endblock %}

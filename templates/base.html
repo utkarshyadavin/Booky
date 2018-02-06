@@ -6,6 +6,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Judson:400,400italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Unkempt' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Seaweed Script' rel='stylesheet'>
+
 
 
 {%block head%}
@@ -15,7 +20,7 @@
 {%endblock%}
 </head>
 <body>
-<br>
+
 
 
 
@@ -30,12 +35,15 @@
                <span class="icon-bar"></span>
 
            </button>
-      <a class="navbar-brand" href="/account/">CodeFunDo</a>
+      <a class="navbar-brand" href="/account/" style="font-family: Seaweed Script; font-size: 26px; color: white">Mark_More</a>
       </div>
       <div class="collapse navbar-collapse id = 'topNavBar">
     <ul class="nav navbar-nav">
         <li class="active"><a href="/account"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a> </li>
     </ul>
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="/account/browse"><span class="glyphicon glyphicon-browse" aria-hidden="true"></span>&nbsp;Browse</a> </li>
+         </ul>
     <form class="navbar-form navbar-left" role="search" method = get action="#">
         <div class="form-group">
             <input type="text" class="form-control" name="q" value="">
@@ -43,7 +51,7 @@
         </div>
     </form>
     <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/account"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Add Stuff</a> </li>
+        <li class="active"><a href="/account/category/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Add Stuff</a> </li>
         <li class="active"><a href="/account"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Logout</a> </li>
     </ul>
 </div>
@@ -54,6 +62,7 @@
 
 
 {%block body%}
+
 {%endblock%}
 
 

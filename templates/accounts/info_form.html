@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/home_style.css' %}" />
+
+{% endblock %}
+
+ {% block body %}
+
+<div class="container-fluid">
+<div class="row">
+
+    <div class="col-sm-12 col-md-9";>
+        <div class="panel panel-default" style="margin-left: 32%; margin-top:15%;">
+            <div class="panel-body"">
+
+                <form class="form-horizontal" action="" method="post" >
+                    {% csrf_token %}
+                   {% include  'accounts/form-template.html' %}
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10"></div>
+                    <button  type="submit" class="btn btn-success " style="margin-left:123px">Submit</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
