@@ -17,14 +17,15 @@
 
 
 
-    <h1 class="text-center">Category List</h1>
+    <h1 class="text-center" style="font-family: 'Abril Fatface', cursive;
+    font-size: 40px;">Category List</h1>
 
 
     <div class="list-group">
      <div class="container list1">
 
     {% for category in all_categorys %}
-        <a href="/account/{{ category.id }}/" class="list-group-item ">{{ category.category_name }} </a>
+        <a href="/account/{{ category.id }}/" class="list-group-item " >{{ category.category_name }} </a>
 
     {% endfor %}
          </div>
