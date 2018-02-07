@@ -31,6 +31,7 @@ SECRET_KEY = 'z6ob=1j@j7qfmi=kawa1voxb^tfd*=5fhwup+_-8zm!$8i=65'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+
 ALLOWED_HOSTS = ['0.0.0.0', 'localost', 'codefundo-demo.herokuapp.com' , '127.0.0.1']
 
 
