@@ -2,14 +2,19 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Judson:400,400italic,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Unkempt' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Seaweed Script' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Judson:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Unkempt' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Seaweed Script' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 
 
@@ -23,6 +28,44 @@
 
 
 
+{% if user.is_authenticated %}
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle= "collapse" data-target = "#topNavBar">
+            <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+
+           </button>
+      <a class="navbar-brand" href="/account/" style="font-family:'Satisfy' , cursive; font-size: 26px; color: white">Mark_More</a>
+      </div>
+      <div class="collapse navbar-collapse id = 'topNavBar">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="/account"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a> </li>
+    </ul>
+          <ul class="nav navbar-nav">
+        <li class="active"><a href="/account/browse"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Browse</a> </li>
+         </ul>
+    <form class="navbar-form navbar-left" role="search" method = get action="#">
+        <div class="form-group">
+            <input type="text" class="form-control" name="q" value="">
+            <button type="submit" class="btn btn-default">Search</button>
+        </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/account/category/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Add Stuff</a> </li>
+
+        <li class="active"><a href="/account/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Logout</a> </li>
+    </ul>
+</div>
+  </div>
+    </nav>
+
+{% else %}
+
 
 
 <nav class="navbar navbar-inverse">
@@ -35,30 +78,28 @@
                <span class="icon-bar"></span>
 
            </button>
-      <a class="navbar-brand" href="/account/" style="font-family: Seaweed Script; font-size: 26px; color: white">Mark_More</a>
+      <a class="navbar-brand" href="" style="font-family:'Satisfy' , cursive; font-size: 26px; color: white">Mark_More</a>
       </div>
-      <div class="collapse navbar-collapse id = 'topNavBar">
-    <ul class="nav navbar-nav">
-        <li class="active"><a href="/account"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;Home</a> </li>
-    </ul>
-          <ul class="nav navbar-nav">
-        <li class="active"><a href="/account/browse"><span class="glyphicon glyphicon-browse" aria-hidden="true"></span>&nbsp;Browse</a> </li>
-         </ul>
-    <form class="navbar-form navbar-left" role="search" method = get action="#">
-        <div class="form-group">
-            <input type="text" class="form-control" name="q" value="">
-            <button type="submit" class="btn btn-default">Search</button>
-        </div>
-    </form>
+
     <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/account/category/add"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Add Stuff</a> </li>
-        <li class="active"><a href="/account"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Logout</a> </li>
+
+           <li class="active"><a href="/account/register"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Register</a> </li>
+         <li class="active"><a href="/account/login"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;Login</a> </li>
+
+
     </ul>
 </div>
   </div>
     </nav>
 
 
+
+
+
+
+
+
+{% endif %}
 
 
 {%block body%}
