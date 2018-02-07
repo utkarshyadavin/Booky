@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 from django.contrib.auth.views import login, logout
-from accounts.views import home
+from accounts.views import home2
 
 
 urlpatterns = [
-    url('^$', home  , name = 'home'),
+    url('^$', home2  , name = 'home_second'),
     url('^admin/', admin.site.urls),
     url('^account/', include('accounts.urls')),
 

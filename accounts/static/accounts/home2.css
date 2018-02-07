@@ -1,0 +1,9 @@
+div.ima{
+
+   width:100px; /*width of your image*/
+   height:100px; /*height of your image*/
+     margin:0; /* If you want no margin */
+
+   background: url("images/image1.jpg");
+
+}​

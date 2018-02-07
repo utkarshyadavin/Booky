@@ -18,6 +18,10 @@ def home(request):
     context = {'user':user}
     return render(request, 'accounts/home.html' , context)
 
+def home2(request):
+
+    return render(request, 'accounts/home2.html')
+
 
 
 def browse(request):

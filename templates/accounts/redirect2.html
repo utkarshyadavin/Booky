@@ -4,6 +4,8 @@
 {% block head %}
 {% load static%}
 <link rel="stylesheet" type="text/css" href="{% static 'accounts/home_style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'accounts/button.css' %}" />
+
 
 {% endblock %}
 
@@ -19,12 +21,12 @@
     <br>
     <br>
     <div class=" text-center">
-    <a href="/account/information/add"> <button class="btn btn-primary">Add More</button> </a>
+    <a href="/account/information/add"> <button class="btn btn-primary specificbutton">Add More</button> </a>
     </div>
     <br>
 
     <div class="text-center">
-        <a href="/account/browse"><button class="btn btn-primary">Browse</button></a>
+        <a href="/account/browse"><button class="btn btn-primary specificbutton">Browse</button></a>
     </div>
 
 {% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'accounts/home_style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'accounts/button.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'accounts/home2.css' %}" />
+
+
+
+{% endblock %}
+
+
+
+
+
+{% block body%}
+
+<h1 class="text-center">Hey! Welcome to CloudMarks!</h1>
+ <div class="container">
+    <div><h2 class="text-center">Finding it difficult to manage Online Bookmarks?</h2></div>
+    <img src="static/accounts/images/book.jpg" width="60%" style="margin-left: 20%; border: 2px; border-radius: 20px">
+
+   <div><h2 class="text-center">Here is the way.</h2></div>
+
+</div>
+
+
+{% endblock %}
