@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="189">
+          <list size="194">
             <item index="0" class="java.lang.String" itemvalue="functools32" />
             <item index="1" class="java.lang.String" itemvalue="numba" />
             <item index="2" class="java.lang.String" itemvalue="greenlet" />
@@ -194,6 +194,11 @@
             <item index="186" class="java.lang.String" itemvalue="ply" />
             <item index="187" class="java.lang.String" itemvalue="hypothesis" />
             <item index="188" class="java.lang.String" itemvalue="openpyxl" />
+            <item index="189" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="190" class="java.lang.String" itemvalue="html5lib" />
+            <item index="191" class="java.lang.String" itemvalue="six" />
+            <item index="192" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="193" class="java.lang.String" itemvalue="MarkupSafe" />
           </list>
         </value>
       </option>
