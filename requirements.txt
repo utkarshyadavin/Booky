@@ -4,8 +4,4 @@ gunicorn==19.7.1
 html5lib==0.999
 postgres==2.2.1
 psycopg2==2.7.1
-python-apt==0.9.3.5ubuntu2
-python-debian==0.1.21-nmu2ubuntu2
-python-gnupg==0.3.6
-requests==2.2.1
 whitenoise==3.3.1
