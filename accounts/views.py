@@ -38,7 +38,7 @@ def information(request, category_id):
     return render(request,'accounts/information.html', {'category': category})
 
 
-def information_added(request):
+def information_added(request ):
 
     return render(request,'accounts/redirect2.html')
 
